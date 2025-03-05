@@ -7,6 +7,10 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import DirectoryLoader
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 FAISS_PATH = "faiss"
 
@@ -19,10 +23,10 @@ def main():
 
     # Initialize LLM
     #llm = Ollama(model="llama2:13b")
-    llm = Ollama(model="tinyllama")
+    llm = Ollama(model=os.getenv("LLM_MODEL"))
 
     # Initialize embedding model
-    embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+    embeddings = OllamaEmbeddings(model=os.getenv("EMBEDDING_MODEL")) 
     #embeddings = OllamaEmbeddings(model="tinyllama")
 
     # Create vector object from local vector store

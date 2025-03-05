@@ -5,6 +5,9 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 import os
 import shutil
+from dotenv import load_dotenv
+
+load_dotenv()
 
 FAISS_PATH = "faiss"
 DATA_PATH = "docs"
@@ -49,7 +52,7 @@ def save_to_faiss(chunks: list[Document]):
         shutil.rmtree(FAISS_PATH)
 
     # Initilize embedding model
-    embeddings = OllamaEmbeddings(model="mxbai-embed-large") 
+    embeddings = OllamaEmbeddings(model=os.getenv("EMBEDDING_MODEL")) 
     #embeddings = OllamaEmbeddings(model="tinyllama") 
 
     # Create a new DB from the documents.

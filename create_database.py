@@ -49,7 +49,8 @@ def save_to_faiss(chunks: list[Document]):
         shutil.rmtree(FAISS_PATH)
 
     # Initilize embedding model
-    embeddings = OllamaEmbeddings(model="mxbai-embed-large") 
+    #embeddings = OllamaEmbeddings(model="mxbai-embed-large") 
+    embeddings = OllamaEmbeddings(model="tinyllama") 
 
     # Create a new DB from the documents.
     db = FAISS.from_documents(chunks, embeddings)

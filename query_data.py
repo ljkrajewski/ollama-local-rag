@@ -18,11 +18,12 @@ def main():
     query_text = args.query_text
 
     # Initialize LLM
-    llm = Ollama(model="llama2:13b")
+    #llm = Ollama(model="llama2:13b")
+    llm = Ollama(model="tinyllama")
 
     # Initialize embedding model
-    #embeddings = OllamaEmbeddings(model="mxbai-embed-large")
-    embeddings = OllamaEmbeddings(model="tinyllama")
+    embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+    #embeddings = OllamaEmbeddings(model="tinyllama")
 
     # Create vector object from local vector store
     vector = FAISS.load_local(FAISS_PATH, embeddings, allow_dangerous_deserialization=True)

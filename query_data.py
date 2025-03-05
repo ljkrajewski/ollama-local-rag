@@ -21,7 +21,8 @@ def main():
     llm = Ollama(model="llama2:13b")
 
     # Initialize embedding model
-    embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+    #embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+    embeddings = OllamaEmbeddings(model="tinyllama")
 
     # Create vector object from local vector store
     vector = FAISS.load_local(FAISS_PATH, embeddings, allow_dangerous_deserialization=True)

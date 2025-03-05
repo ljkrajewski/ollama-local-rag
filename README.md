@@ -1,3 +1,9 @@
+_The main difference between this fork and the original is the use of an_ .env _file to define the LLM and embedding models. For format for the_ .env _file is:_
+```
+LLM_MODEL=tinyllama
+EMBEDDING_MODEL=mxbai-embed-large
+```
+
 # Langchain RAG Project
 
 This repository provides an example of implementing Retrieval-Augmented Generation (RAG) using LangChain and Ollama. The RAG approach combines the strengths of an LLM with a retrieval system (in this case, FAISS) to allow the model to access and incorporate external information during the generation process.

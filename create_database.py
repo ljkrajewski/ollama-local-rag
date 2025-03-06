@@ -24,7 +24,7 @@ def generate_data_store():
 
 
 def load_documents():
-    loader = DirectoryLoader(DATA_PATH, glob="*.[md|txt|pdf]", recursive=True)
+    loader = DirectoryLoader(DATA_PATH, glob="*.md", recursive=True)
     documents = loader.load()
     return documents
 

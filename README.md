@@ -3,6 +3,7 @@ _The main difference between this fork and the original is the use of an_ .env _
 LLM_MODEL=tinyllama
 EMBEDDING_MODEL=mxbai-embed-large
 ```
+_You can use the_ RAG_colab_example.ipynb _Google Colab notebook to see this repo in action._
 
 # Langchain RAG Project
 

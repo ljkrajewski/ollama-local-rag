@@ -2,5 +2,9 @@ langchain==0.1.16
 langchain_community==0.0.33
 langchain_core==0.1.45
 langchain_text_splitters==0.0.1
-unstructured[md]==0.13.2
+
+# https://pypi.org/project/unstructured/
+# https://docs.unstructured.io/open-source/core-functionality/partitioning
+unstructured[md,text,pdf]==0.13.2
+
 faiss-cpu==1.8.0

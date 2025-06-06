@@ -1,20 +1,20 @@
-numpy<2.1, >=2.0
-packaging>=24.2.0
-langchain>=0.3.0
-langchain-community>=0.3.0
-numba>=0.61.0
-tensorflow>=2.18.0
-db-dtypes>=1.4.3
-google-cloud-bigquery=3.33.0
-thinc=8.2.2
+numpy < 2.1, >= 2.0
+packaging >= 24.2.0
+langchain >= 0.3.0
+langchain-community >= 0.3.0
+numba >= 0.61.0
+tensorflow >= 2.18.0
+db-dtypes >= 1.4.3
+google-cloud-bigquery = 3.33.0
+thinc = 8.2.2
 #db-dtypes 1.4.2
 #langchain==0.1.16
 #langchain_community==0.0.33
-langchain_core==0.1.45
-langchain_text_splitters==0.0.1
+langchain_core == 0.1.45
+langchain_text_splitters == 0.0.1
 
 # https://pypi.org/project/unstructured/
 # https://docs.unstructured.io/open-source/core-functionality/partitioning
-unstructured[md,text,pdf]==0.13.2
+unstructured[md,text,pdf] == 0.13.2
 
-faiss-cpu==1.8.0
+faiss-cpu == 1.8.0

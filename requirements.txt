@@ -12,7 +12,8 @@ thinc == 8.2.2
 #langchain_community==0.0.33
 #langchain_core == 0.1.45
 langchain-core >=0.3.0
-langchain_text_splitters == 0.0.1
+#langchain_text_splitters == 0.0.1
+langchain-text-splitters >=0.3.0
 
 # https://pypi.org/project/unstructured/
 # https://docs.unstructured.io/open-source/core-functionality/partitioning
